@@ -1,0 +1,37 @@
+'scopeName': 'source.bulkan'
+'name': 'Bulkan'
+'fileTypes': ['bulkan']
+
+'patterns': [
+    {
+        'match': '\\b([0-9]+\\.?[0-9]*)\\b'
+        'name': 'constant.numeric.bulkan'
+    }
+    {
+        'match': '([a-zA-Z0-9]+)\s*(?=\\()\\b'
+        'name': 'entity.name.function.bulkan'
+    }
+    {
+        'match': '\\b(for)\\b'
+        'name': 'keyword.control.bulkan'
+    }
+    {
+        'match': '\\b(print|let|assert)\\b'
+        'name': 'keyword.other.bulkan'
+    }
+    {
+        'match': '#.*\\n?'
+        'name': 'comment.line.double-slash.bulkan'
+    }
+    {
+        'begin': '\''
+        'end': '\''
+        'name': 'string.quoted.single.bulkan'
+        'patterns': [
+            {
+                'match': '\\$[a-zA-Z][a-zA-Z0-9]*\\b'
+                'name': 'entity.name.tag.bulkan'
+            }
+        ]
+    }
+]

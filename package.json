@@ -1,0 +1,17 @@
+{
+  "name": "language-bulkan",
+  "version": "0.0.0",
+  "description": "Bulkan Language support for Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MokaDevOrg/bulkan-atom"
+  },
+  "bugs": {
+    "url": "https://github.com/MokaDevOrg/bulkan-atom/issues"
+  },
+  "license": "MIT"
+}
